@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Important Question</title>
+        <link rel="icon" href="quesmark.jpg">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            function btn() {
+                var name = document.getElementById('name').value
+                var classs = document.getElementById('class').value
+                var section = document.getElementById('section').value
+
+                if(name === '' || classs === '' || section === '') {
+                    alert('Fill the form first')
+                }else {
+                    document.getElementById('heading').innerHTML = 'Well Done!'
+                    window.location.href = 'https://forms.zohopublic.in/navyamalhotran353/form/Quiz/formperma/pjsNQpi4GluOxUDVVZKOiN19DSQwRMh71M51eyxPft4'
+                }
+            }
+        </script>
+    </head>
+    <body>
+       <p id="heading">One question that might change your life!</p> 
+       <div>
+       <div class="your-name">
+           <p style="font-size: 200%;">Your Name : (If you have entered your name wrong by chance, you don't get second chance. So please be careful!)</p>
+       <input type="text" id="name">
+
+       </div>
+       <div class="your-class">
+           <p style="font-size : 200%;">Your Class : </p>
+           <input type="text" id="class">
+       </div>
+       <div class="your-section">
+        <p style="font-size : 200%;">Your Section : </p>
+        <input type="text" id="section">
+       </div>
+       
+       </div>
+       <div >
+       <button class="go-for-it" onclick="btn()">Got For It</button>
+       </div>
+    </body>
+</html>
